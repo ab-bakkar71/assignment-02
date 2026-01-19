@@ -4,8 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-02</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="./tailwind.init.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+        .font-inter{
+            font-family: "Inter", sans-serif;
+        }
+     </style>
 </head>
-<body>
-    
+<body class="font-inter">
+    <header>
+        <nav class="bg-[#1A0B2E]">
+            <div class="max-w-[80%] mx-auto py-[24px] flex justify-between items-center border-amber-500">
+                <img src="./assets/logo.png" alt="logo">
+                <div>
+                    <ul>
+                    <li class="text-white flex gap-8 ">
+                        <a href="#">About</a>
+                        <a href="#">Episodes</a>
+                        <a href="#">Host</a>
+                    </li>
+                </ul>
+                </div>
+                <button class="nav-btn py-2 px-5 text-white rounded-full font-semibold bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100f8]">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+                <div class="hambarger text-white lg:hidden"><i class="fa-solid fa-bars"></i></div>
+            </div>
+            
+        </nav>
+    <!-- banner section -->
+     <section class="relative bg-[url(./assets/hero-bg.png)] bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center text-center">
+        <div class="relative flex items-center justify-center py-14">
+            <img class="w-[416px] w-[416px]" src="./assets/hero-circle.png" alt="">
+            <img class="w-[] h-[250px] absolute" src="./assets/microphone.png" alt="">
+             <span class="absolute top-17 right-15 shadow-[0_0_10px_#00FF88] bg-emerald-400 text-black text-[18px] font-semibold px-3 py-0.5 rounded-full">
+          NEW
+        </span>
+        </div>
+        <div class="text-white text-center py- ">
+            <h1 class="text-6xl font-bold">TechWave</h1>
+            <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            <div class="mt-6 mb-[100px] ">
+                <button class="bg-gradient-to-tr from-[#ecdc2b] via-[#FB09B4] to-[#9100f8] py-3 px-5 rounded-full"><i class="fa-brands fa-spotify"></i>Listen on Spotify</button>
+                <button class="text-[#00FF88] border-2 px-5 py-2 ml-2 rounded-full"><i class="fa-regular fa-envelope"></i>Subscribe</button>
+            </div>
+        </div>
+     </section>
+    </header>
+
+    <main>
+        <section class="bg-[#1a0b2e]">
+            <div class="max-w-[80%] mx-auto">
+                <div class=" text-white text-center pt-[50px]">
+                <h1 class="text-5xl font-bold mb-4">
+                    About the Podcast
+                </h1>
+                <p class="text-[16px] leading-4">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br>
+                We break down complex topics into digestible insights, explore productivity strategies that actually work, <br>
+                <p class="text-[16px] mt-4">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+                <hr class="mt-20 border opacity-35">
+            </div>
+            <div class="grid grid-cols-4 justify-center text-center mt-20 pb-[120px]"> 
+                <div>
+                    <h3 class="text-5xl text-[#00FF88] font-bold">150K+</h3>
+                    <p class="text-white uppercase mt-4">Monthly Listeners</p>
+                </div>
+                <div>
+                    <h3 class="text-5xl text-[#00FF88] font-bold">200+</h3>
+                    <p class="text-white uppercase mt-4">Episodes Published</p>
+                </div>
+                <div>
+                    <h3 class="text-5xl text-[#00FF88] font-bold">4.9★</h3>
+                    <p class="text-white uppercase mt-4">Average Rating</p>
+                </div>
+                <div>
+                    <h3 class="text-5xl text-[#00FF88] font-bold">50+</h3>
+                    <p class="text-white uppercase mt-4">Industry Experts</p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
