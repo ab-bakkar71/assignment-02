@@ -19,17 +19,6 @@
         font-family: "Inter", sans-serif;
       }
     </style>
-    <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        screens: {
-          xs: "576px", 
-        },
-      },
-    },
-  }
-</script>
   </head>
   <body class="font-inter bg-[#1A0B2E]">
     <header>
@@ -57,16 +46,15 @@
       </nav>
       <hr class="border border-white opacity-15" />
       <!-- banner section -->
-      <section
-        class="relative bg-[url(./assets/hero-bg.png)] bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center text-center">
+      <section class="relative bg-[url(./assets/hero-bg-mobile.png)] md:bg-[url(./assets/hero-bg.png)] bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center text-center">
         <div class="relative flex items-center justify-center py-14">
           <img
-            class=" w-[70%] md:w-[416px]"
+            class=" w-[60%] md:w-[416px]"
             src="./assets/hero-circle.png"
             alt=""
           />
           <img
-            class="w-[] h-[50%] md:h-[250px] absolute"
+            class="w-[] h-[40%] md:h-[250px] absolute"
             src="./assets/microphone.png"
             alt=""
           />
@@ -283,7 +271,7 @@
         </section>
     </main>
 <!-- footer section -->
-    <footer class="py-10 md:p-[160px] text-white flex flex-col justify-center items-center gap-8 bg-[url(./assets/footer-bg.png)]  bg-no-repeat bg-cover bg-[length:250px]">
+    <footer class="py-10 md:p-[160px] text-white flex flex-col justify-center items-center gap-8 bg-[url(./assets/footer-bg-mobile.png)] lg:bg-[url(./assets/footer-bg.png)]  bg-no-repeat bg-cover bg-center">
       <img class="w-48 md:w-[400px]" src="./assets/logo.png" alt="">
       <div class=" grid grid-cols-2 text-center md:grid-cols-4 justify-center gap-6 md:gap-10">
         <a href="#"class="hover:text-[#00FF88] transition"><i class="fa-brands fa-spotify"></i> Spotify</a>
